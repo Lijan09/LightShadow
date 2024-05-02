@@ -277,7 +277,7 @@ GameObject:
   - component: {fileID: 437950676}
   - component: {fileID: 437950675}
   - component: {fileID: 437950674}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -499,7 +499,7 @@ GameObject:
   - component: {fileID: 1010287701}
   - component: {fileID: 1010287700}
   - component: {fileID: 1010287699}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floating Island
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -647,7 +647,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 1456590100}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 6f891c702894e29418ad51b64f70a9f4, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -699,17 +699,17 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 6f891c702894e29418ad51b64f70a9f4, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
+  m_CollisionDetection: 1
+  m_Constraints: 4
 --- !u!212 &1456590103
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -786,10 +786,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1456590100}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dbe7229fc8730e44abc04a21e9b9fe19, type: 3}
+  m_Script: {fileID: 11500000, guid: 06015bf45a489c542b35701f6cea46c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0
+  PD: {fileID: 11400000, guid: 743f85181a459e94295189d77df9d2d5, type: 2}
+  RB: {fileID: 0}
+  BC: {fileID: 0}
+  _groundLayer:
+    serializedVersion: 2
+    m_Bits: 8
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
