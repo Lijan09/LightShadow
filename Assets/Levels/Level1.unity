@@ -134,26 +134,14 @@ GameObject:
   - component: {fileID: 321814085}
   - component: {fileID: 321814084}
   - component: {fileID: 321814083}
-  - component: {fileID: 321814082}
-  m_Layer: 0
+  - component: {fileID: 321814086}
+  m_Layer: 2
   m_Name: Bulb
-  m_TagString: Untagged
+  m_TagString: Bulb
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &321814082
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 321814081}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ffdcf3e0bb9883e4588961bc5200f09d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &321814083
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -266,6 +254,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &321814086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 321814081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b59e6b397266e74bb7b625791725f1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hasLOS: 0
 --- !u!1 &437950673
 GameObject:
   m_ObjectHideFlags: 0
@@ -631,9 +632,10 @@ GameObject:
   - component: {fileID: 1456590102}
   - component: {fileID: 1456590101}
   - component: {fileID: 1456590105}
+  - component: {fileID: 1456590106}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -795,6 +797,20 @@ MonoBehaviour:
   _groundLayer:
     serializedVersion: 2
     m_Bits: 8
+--- !u!114 &1456590106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1456590100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae36932fb56ce7e4a8f27d7766544ffd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 0
+  isPlayerLight: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
