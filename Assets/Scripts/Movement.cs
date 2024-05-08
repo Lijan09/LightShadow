@@ -32,17 +32,17 @@ public class Movement : MonoBehaviour
 
     void FixedUpdate()
     {
-        RaycastHit2D ray = Physics2D.Raycast(transform.position, bulb.transform.position - transform.position);
+        RaycastHit2D ray = Physics2D.Raycast(transform.position, transform.position - bulb.transform.position);
         if(ray.collider != null)
         {
             hasLOS = ray.collider.CompareTag("Bulb");
             if(hasLOS)
             {
-                Debug.DrawRay(transform.position, bulb.transform.position - transform.position, Color.green);
+                Debug.DrawRay(transform.position, transform.position - bulb.transform.position, Color.green);
             }
             else
             {
-                Debug.DrawRay(transform.position, bulb.transform.position - transform.position, Color.red);
+                Debug.DrawRay(transform.position, transform.position - bulb.transform.position, Color.red);
             }
         }
     }

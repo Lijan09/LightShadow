@@ -1,11 +1,9 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerHealthNShit : MonoBehaviour
 {
     [SerializeField] int health;
-    [SerializeField] bool isPlayerLight = false; 
+    [SerializeField] bool isPlayerLight = true; 
 
     public void RayHittin(bool hasLOS)
     {
